@@ -49,30 +49,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.4rem 5vw;
+    padding: 0.6rem 5vw;
     background: rgba(10,10,10,0.8);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
   }
-  .nav-logo {
-    font-family: var(--font-head);
-    font-size: 1.4rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    color: var(--text);
-    text-decoration: none;
+  .nav-logo img {
+    height: 56px;
+    width: auto;
+    display: block;
   }
-  .nav-logo span { color: var(--orange); }
-  nav a.cta-small {
-    color: var(--text);
-    font-family: var(--font-head);
-    font-weight: 700;
-    font-size: 1.3rem;
-    text-decoration: none;
-    letter-spacing: -0.01em;
-    transition: color 0.2s;
-  }
-  nav a.cta-small:hover { color: var(--orange); }
 
   /* HERO */
   .hero {
@@ -439,14 +425,11 @@
     flex-wrap: wrap;
     gap: 1rem;
   }
-  footer .foot-logo {
-    font-family: var(--font-head);
-    font-weight: 800;
-    font-size: 1.1rem;
-    color: var(--text);
-    text-decoration: none;
+  .foot-logo img {
+    height: 40px;
+    width: auto;
+    display: block;
   }
-  footer .foot-logo span { color: var(--orange); }
   footer p { font-size: 0.8rem; color: var(--muted); }
 
   @keyframes fadeUp {
@@ -467,8 +450,9 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo"><span>S</span>Voice</a>
-  <a href="tel:7799310537" class="cta-small">(779) 931-0537</a>
+  <a href="#" class="nav-logo">
+    <img src="logo__1_.png" alt="SVoice">
+  </a>
 </nav>
 
 <!-- HERO -->
@@ -594,7 +578,9 @@
 
 <!-- FOOTER -->
 <footer>
-  <a href="#" class="foot-logo"><span>S</span>Voice</a>
+  <a href="#" class="foot-logo">
+    <img src="logo__1_.png" alt="SVoice">
+  </a>
   <p>© 2026 SVoice. AI phone ordering for restaurants &amp; cafes.</p>
   <p>27475 Ferry Rd, Warrenville, IL 60555</p>
   <p>svoice.us</p>
