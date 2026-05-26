@@ -41,7 +41,6 @@
     opacity: 0.4;
   }
 
-  /* NAV */
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -54,13 +53,8 @@
     backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
   }
-  .nav-logo img {
-    height: 56px;
-    width: auto;
-    display: block;
-  }
+  .nav-logo img { height: 56px; width: auto; display: block; }
 
-  /* HERO */
   .hero {
     min-height: 100vh;
     display: flex;
@@ -80,10 +74,8 @@
   }
   .hero-img {
     position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 55%;
+    right: 0; top: 0;
+    height: 100%; width: 55%;
     object-fit: cover;
     object-position: center;
     z-index: 0;
@@ -163,7 +155,6 @@
   }
   .btn-ghost:hover { border-color: var(--orange); color: var(--orange); }
 
-  /* HERO STATS */
   .hero-stats {
     margin-top: 5rem;
     display: flex;
@@ -190,7 +181,6 @@
     margin-top: 0.3rem;
   }
 
-  /* SCROLLING STRIP */
   .phone-strip {
     padding: 1rem 0;
     border-top: 1px solid var(--border);
@@ -229,7 +219,6 @@
     to { transform: translateX(-50%); }
   }
 
-  /* SECTIONS */
   section { padding: 7rem 5vw; }
   .section-label {
     font-size: 0.72rem;
@@ -255,7 +244,6 @@
     font-size: 1rem;
   }
 
-  /* STEPS */
   .steps {
     margin-top: 4rem;
     display: grid;
@@ -292,7 +280,6 @@
   .step p { font-size: 0.9rem; color: var(--muted); line-height: 1.65; }
   .step .highlight { color: var(--orange); font-weight: 500; }
 
-  /* PRICING */
   .pricing-bg {
     background: var(--surface);
     border-top: 1px solid var(--border);
@@ -378,7 +365,6 @@
   .plan:not(.popular) .plan-cta { border: 1px solid var(--border); color: var(--muted); }
   .plan:not(.popular) .plan-cta:hover { border-color: var(--orange); color: var(--orange); }
 
-  /* CTA BAND */
   .cta-band {
     text-align: center;
     padding: 8rem 5vw;
@@ -416,7 +402,6 @@
   }
   .phone-big:hover { opacity: 0.8; }
 
-  /* FOOTER */
   footer {
     border-top: 1px solid var(--border);
     padding: 2rem 5vw;
@@ -426,11 +411,7 @@
     flex-wrap: wrap;
     gap: 1rem;
   }
-  .foot-logo img {
-    height: 40px;
-    width: auto;
-    display: block;
-  }
+  .foot-logo img { height: 40px; width: auto; display: block; }
   footer p { font-size: 0.8rem; color: var(--muted); }
 
   @keyframes fadeUp {
@@ -449,14 +430,12 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">
     <img src="logo (1).png" alt="SVoice">
   </a>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <img src="counter2.jpg" alt="Cafe counter" class="hero-img">
   <div class="hero-overlay"></div>
@@ -482,7 +461,6 @@
   </div>
 </section>
 
-<!-- SCROLLING STRIP -->
 <div class="phone-strip">
   <div class="strip-track">
     <span class="strip-item"><span class="strip-dot"></span>Answers every call instantly</span>
@@ -498,12 +476,10 @@
   </div>
 </div>
 
-<!-- HOW IT WORKS -->
 <section id="how">
   <p class="section-label">How it works</p>
   <h2 class="section-title">Set up in a day.<br>Orders start immediately.</h2>
   <p class="section-sub">No new hardware. Works on any phone you already have.</p>
-
   <div class="steps">
     <div class="step">
       <div class="step-num">01</div>
@@ -528,12 +504,10 @@
   </div>
 </section>
 
-<!-- PRICING -->
 <section id="pricing" class="pricing-bg">
   <p class="section-label">Simple Flat Pricing — No Per-Call Fees</p>
   <h2 class="section-title">Simple, flat monthly plans.</h2>
   <p class="section-sub">No per-call fees. No setup costs. Cancel any time.</p>
-
   <div class="plans">
     <div class="plan popular">
       <div class="popular-badge">Most Popular</div>
@@ -544,7 +518,6 @@
         <li>1 number · Unlimited orders</li>
         <li>Priority support</li>
         <li>Integration included</li>
-        <li>Stripe payment processing</li>
       </ul>
       <a href="tel:7799310537" class="plan-cta">Get Started</a>
     </div>
@@ -562,7 +535,6 @@
   </div>
 </section>
 
-<!-- CTA BAND -->
 <section class="cta-band">
   <h2>Ready to never take<br>an order again?</h2>
   <p>Call us to get started today.</p>
@@ -574,7 +546,6 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <a href="#" class="foot-logo">
     <img src="logo (1).png" alt="SVoice">
